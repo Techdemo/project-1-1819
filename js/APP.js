@@ -1,6 +1,6 @@
 "use strict"
 
-import { API } from '../../node_modules/oba-wrapper/js/index.js';
+import { API } from './../node_modules/oba-wrapper/js/index.js';
 import { sanitize, addLoader, noData, formHeader, restoreHeader, showToast } from './components/collection.js';
 import { renderList } from './components/renderList.js';
 import { saveListRender } from './pages/saveListRender.js';
