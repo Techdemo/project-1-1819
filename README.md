@@ -1,6 +1,12 @@
 # Oba sheet music app
 ## Project 1 @cmda-minor-web · 2018-2019
 
+
+![page of app](https://github.com/Techdemo/project-1-1819/blob/master/assets/screen1.png?raw=true "front page of app")
+
+![page of app](https://github.com/Techdemo/project-1-1819/blob/master/assets/screen2.png?raw=true "front page of app")
+
+
 ### preface
 The oba sheet music app is a way to search, view and save digitalized sheet music. The sheet music is coming from the public libary of Amsterdam.
 At this moment, sheet music isn't digitalized yet. So I made this prototype to prove what the future benefits could be of making your sheet music digital available.
