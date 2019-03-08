@@ -1,9 +1,19 @@
-# Project 1 @cmda-minor-web · 2018-2019
+# Oba sheet music app
+## Project 1 @cmda-minor-web · 2018-2019
 
-## Zoek in de de collectie van de OBA
+### preface
+The oba sheet music app is a way to search, view and save digitalized sheet music. The sheet music is coming from the public libary of Amsterdam.
+At this moment, sheet music isn't digitalized yet. So I made this prototype to prove what the future benefits could be of making your sheet music digital available.
 
-Het project vindt plaats bij de Centrale OBA. Maandagochtend is om 10.00 uur de kickoff, vrijdag zijn de presentaties van de resultaten. In een week bouwt iedere student een eigen prototype dat bezoekers kan helpen om items uit de OBA collectie te vinden. Technieken geleerd bij [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) worden toegepast bij het bouwen van de de prototypes.
+### The app
+As I've mentioned in the preface, this app is a prototype. So you will find that some functionalities won't work.
+The webapp is requesting data from the oba api, the search results consists of real data from the oba api.
+The render of the score comes from the Flat io api. Flat Io is a service in which the user can create and store musicsheets. Using musicXML, flat io can play the sheet music in the browser. Also it is possible to make use of a metronome or play different parts of the music sheet.
 
-We verzamelen maandagochtend om 09.45 op de 1e verdieping van de Centrale OBA, [Oosterdokskade 143](https://www.google.com/maps/place/OBA+library+of+Amsterdam/@52.3756983,4.9082087,15z/data=!4m2!3m1!1s0x0:0x6b97f693e6ecb494?ved=2ahUKEwioo6OrzubgAhWLNOwKHR6KDQgQ_BIwCnoECAYQCA).
+### verdict
+Thanks to @maanlamp for making the oba wrapper. The wrapper enables us to request data in a format that is workable. The original Oba api is a disaster to work with, so the wrapper made it awesome to work with the api.
+
+
+
 
 
