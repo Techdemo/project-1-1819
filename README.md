@@ -16,6 +16,11 @@ The render of the score comes from the Flat io api. Flat Io is a service in whic
 ### verdict
 Thanks to @maanlamp for making the oba wrapper. The wrapper enables us to request data in a format that is workable. The original Oba api is a disaster to work with, so the wrapper made it awesome to work with the api.
 
+I think it would be cool to work on this webapp for real!
+So OBA, if you think this concept and webapp can be implemented for production. You can find me at info@marcelfleuren.nl
+
+
+
 
 
 
