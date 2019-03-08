@@ -12,26 +12,26 @@
     <button class="sideNavButton" id="sideNavButton">Library</button>
     <nav>
         <ul>
-            <li><a href="#saved">Saved Sheets</a></li>
+            <li><a href="#saved">Saved Sheets(3)</a></li>
             <li><a href="#playLists">Playlists</a></li>
-            <li><a href="#home">Overview</a></li>
+            <li><a href=''>Search Sheets</a></li>
         </ul>
     </nav>
+        <form>
+            <input type="text">
+            <section class="buttonGroup">
+                <button class="submitButton" id="submit">submit</button>
+                <button classs="filterButton" id="filterButton">Filter</button>
+            </section>
+        </form>
 </header>
-</section>
 <body>
-    <form>
-        <input type="text">
-        <section class="buttonGroup">
-            <button class="submitButton" id="submit">submit</button>
-            <button classs="filterButton" id="filterButton">Filter</button>
-        </section>
-    </form>
     <main>
         <section id="app">
         </section>
     </main>
     <script src="./js/components/router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flat-embed@v0.10.0/dist/embed.min.js"></script>
     <script src="./js/APP.js" type="module"></script>
 </body>
 

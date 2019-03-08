@@ -22,5 +22,23 @@ let resultNumber = (array) => {
     document.getElementById("app").insertAdjacentHTML("afterbegin", markup)
 }
 
+let formHeader = () => {
+    let header = document.querySelector("header")
+    header.classList.toggle("minimizeHeader");
+    let form = document.querySelector("form");
+    form.classList.toggle("minimizeForm");
+    console.log("header wordt kleiner");
+}
+let restoreHeader = () => {
+    console.log("restore header loopt")
+    let form = document.querySelector("form");
+    let header = document.querySelector("header")
+    form.classList.remove("minimizeHeader")
+    header.classList.remove("minimizeForm")
+}
 
-export { sanitize, addLoader, noData, resultNumber }
+let showToast = () => {
+    console.log("Toast klaart")
+}
+
+export { sanitize, addLoader, noData, resultNumber, formHeader, restoreHeader, showToast }

@@ -71,20 +71,48 @@ html {
 }
 header {
     display: flex;
+    flex-flow: row wrap;
     flex-direction: row;
     justify-content: space-between;
     height: 27.5vh;
     padding: 1rem;
     background-color: var(--red);
+    transition: all 0.4s ease-in forwards;
 }
+
+#app {
+  margin-top: 5vh;
+}
+.minimizeHeader {
+  height: 5vh;
+  transition: all 0.2s ease-in;
+}
+.minimizeHeader .sideNavButton {
+  height: 100%;
+  transition: all 0.2s ease-in;
+}
+.minimizeForm {
+    transform: translate(0px, -100%);
+    opacity: 0;
+     transition: all 0.2s ease-in;
+}
+
 button {
-    border: 1px solid black;
     height: 5vh;
-    border-radius: 10px;
+    color: white;
+    background-color: var(--indigo);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+button:hover {
+    transition: all 0.2s ease-in;
+    background-color: var(--red);
+    color: white;
 }
 h1 {
     font-size: var(--heading-size);
     color: white;
+    flex-grow: 1;
 }
 h2 {
     font-size: var(--heading-size-sub);
@@ -104,16 +132,12 @@ form {
     padding: 2vw;
     display: flex;
     justify-content: center;
+    flex-grow: 2;
     flex-direction: column;
-    position: absolute;
-    top: 26%;
-    right: 10%;
-}
-.buttonGroup {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: center;
+    align-self: flex-end;
+    margin-top: 17.5vh;
+    margin-left: 10%;
+    transition: all 0.2s ease-in forwards;
 }
 input[type=text]{
     height: 2.5vh;
@@ -126,7 +150,7 @@ input[type=text]{
     padding: 1em;
     box-shadow: 0 0 8px  rgba(0,0,0,0.1),
                 0 0 16px rgba(0,0,0,0.1);
-    border-radius: 15px;
+    border-radius: 5px;
 }
 input[type=text]:focus {
   outline: 0;
@@ -135,16 +159,15 @@ main{
     padding: 0.5em;
     padding-top: 4.5em;
 }
+
 .listItem {
-  padding: 2em;
+  display: grid;
+  grid-template-columns: 25% auto;
   border: 2px var(--lightBlue);
-   box-shadow: 0 0 8px  rgba(0,0,0,0.1),
+  box-shadow: 0 0 8px  rgba(0,0,0,0.1),
             0 0 16px rgba(0,0,0,0.1);
-             border-radius: 15px;
+  border-radius: 15px;
   margin: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   animation: fadeIn .4s ease-in forwards;
   opacity: 0;
 }
@@ -154,6 +177,18 @@ main{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
+}
+.listItemImage {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.listItemContent {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 @keyframes fadeIn {
   0% {
@@ -233,10 +268,10 @@ nav {
   left: 0;
   top: 0;
   position: fixed;
-  z-index: 999;
   transition: all 0.3s ease-in;
   box-shadow: 0 0 16px  rgba(0,0,0,0.2),
                 0 0 16px rgba(0,0,0,0.2);
+  z-index: 99;
 }
 nav ul {
   height: 33.33%;
@@ -257,11 +292,11 @@ nav ul li {
   font-size: var(--paragraph-size);
 }
 .show {
-  width: 40vw;
+  width: 43.5vw;
 }
 .show ul {
   opacity: 1;
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
 }
 .saveListRender {
   display: flex;
@@ -288,4 +323,49 @@ nav ul li {
   transition: all 0.1s ease-in;
    box-shadow: 0 0 8px  rgba(0.3,0,0,0),
             0 0 16px rgba(0.3,0,0,0);
+}
+#embed-container {
+  height: 100vh;
+  width: 100%;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+
+}
+li a:hover {
+  color: var(--red);
+}
+footer {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+footer button {
+  border: none;
+  width: 100%;
+}
+.toast {
+  position: fixed;
+  bottom: 0;
+  transition: all 0.3s ease-in;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 75vw;
+  height: 0vh;
+  z-index: 999;
+  background-color: var(--red);
+      box-shadow: 0 0 8px  rgba(0,0,0,0.1),
+                0 0 16px rgba(0,0,0,0.1);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.toastShow {
+  height: 7.5vh;
+  transition: all 0.3s ease-in;
 }
