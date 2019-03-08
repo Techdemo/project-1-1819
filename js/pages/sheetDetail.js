@@ -1,10 +1,11 @@
 
 "use strict"
 
-import { sanitize } from "../components/collection.js";
+import { sanitize, addLoader } from "../components/collection.js";
 
 
 let renderSheetTest = () => {
+    addLoader()
     sanitize()
     let markup = `
     <h2>Norwegian Wood - The beatles</h2>

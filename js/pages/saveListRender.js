@@ -1,7 +1,6 @@
 "use strict"
 import { sanitize } from '../components/collection.js'
 import { showNav } from '../APP.js';
-import { restoreHeader } from '../components/collection.js';
 
 let saveListRender = () => {
     showNav()

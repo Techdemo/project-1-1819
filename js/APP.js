@@ -5,6 +5,7 @@ import { sanitize, addLoader, noData, formHeader, restoreHeader, showToast } fro
 import { renderList } from './components/renderList.js';
 import { saveListRender } from './pages/saveListRender.js';
 import { renderSheetTest } from './pages/sheetDetail.js';
+import { playListRender } from './pages/Playlist.js';
 
 
     const api = new API({ key: "1e19898c87464e239192c8bfe422f280" });
@@ -70,7 +71,8 @@ routie({
         saveListRender()
     },
     'playLists': function () {
-        // formHeader()
+        sanitize()
+        playListRender()
         console.log("deze moet nog komen");
     },
     '': function () {
